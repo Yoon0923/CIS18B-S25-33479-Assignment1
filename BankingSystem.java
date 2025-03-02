@@ -3,23 +3,18 @@ import java.util.Scanner;
 class BankAccount {
     private String accountHolderName;
     private int accountNumber;
-    private double balance;
-    
+    private double balance; 
     private static int accountCounter = 1000;
-    
     public BankAccount(String accountHolderName, double initialBalance) {
         this.accountHolderName = accountHolderName;
         this.accountNumber = accountCounter++;
-        this.balance = initialBalance;
-    }
-    
+        this.balance = initialBalance; } 
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
             System.out.println("Deposit successful! New balance: $" + balance);
         } else {
-            System.out.println("Invalid deposit amount. Must be greater than zero.");
-        }
+            System.out.println("Invalid deposit amount. Must be greater than zero."); }
     }
     
     public void withdraw(double amount) {
@@ -35,8 +30,7 @@ class BankAccount {
     
     public double getBalance() {
         return balance;
-    }
-    
+    } 
     public void displayAccountInfo() {
         System.out.println("Account Holder: " + accountHolderName);
         System.out.println("Account Number: " + accountNumber);
@@ -49,8 +43,7 @@ public class BankingSystem {
         Scanner scanner = new Scanner(System.in);
         BankAccount userAccount = null;
         boolean exit = false;
-        
-        System.out.println("Welcome to Simple Bank System");
+          System.out.println("Welcome to Simple Bank System");
         
         while (!exit) {
             System.out.println("\n1. Create Account");
@@ -58,8 +51,7 @@ public class BankingSystem {
             System.out.println("3. Withdraw Money");
             System.out.println("4. Check Balance");
             System.out.println("5. Exit");
-            System.out.print("\nEnter your choice: ");
-            
+            System.out.print("\nEnter your choice: ");   
             try {
                 int choice = Integer.parseInt(scanner.nextLine());
                 
@@ -120,5 +112,4 @@ public class BankingSystem {
             }
         }
         scanner.close();
-    }
-}
+    }}
