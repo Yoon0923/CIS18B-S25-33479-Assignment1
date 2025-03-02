@@ -1,1 +1,2 @@
 # CIS18B-S25-33479-Assignment1
+- With a simple banking system, users can create accounts, deposit and withdraw money, check balances, and then shut down the system. To compile a program, type 'javac Banking System.java'; if no error appears, run 'java Banking System' to start the program. The program displays a menu with options to choose from, such as creating an account, depositing, withdrawing money, checking balances, or shutting down the system.
